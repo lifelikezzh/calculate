@@ -22,7 +22,7 @@ void clip(const char *caculator, int *digit, char *signal) {
                 digit[cnt1]+=(caculator[i-cnt]-48)*pow(10,cnt-1);
                 cnt--;
             }
-            signal[cnt1+1]=caculator[i];
+            if (plusOne==1){signal[cnt1]=caculator[i];}else{signal[cnt1+1]=caculator[i];}
             if (plusOne==1){cnt1+=1;}else{cnt1+=2;}
             plusOne=0;
         }
