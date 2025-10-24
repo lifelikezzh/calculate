@@ -4,5 +4,5 @@
 
 #ifndef CACULATE_CLIP_H
 #define CACULATE_CLIP_H
-void clip(const char *caculator, int *digit, char *signal);
+void clip(const char *caculator, double *digit, char *signal);
 #endif //CACULATE_CLIP_H

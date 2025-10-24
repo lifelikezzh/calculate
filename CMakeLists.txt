@@ -7,4 +7,8 @@ add_executable(caculate main.c
         isLegal.c
         factorial.c
         clip.c
-        delarr.c)
+        PracticalTools.c
+        ConvertDecimals.c
+        bracket.c
+        calculate.c
+        TurntoChar.c)

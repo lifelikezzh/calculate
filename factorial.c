@@ -5,7 +5,8 @@
 #include "factorial.h"
 int factorial(const int a) {
     int result=1;
-    for (int i=1;i<=a;i++) {
+    int i=0;
+    for (i=1;i<=a;i++) {
         result*=i;
     }
     return result;

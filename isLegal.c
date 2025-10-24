@@ -4,7 +4,8 @@
 #include <ctype.h>
 #include "isLegal.h"
 int isLegal(const char *caculator, const int length) {
-    for (int i=0;i<length-1;i++) {
+    int i=0;
+    for (i=0;i<length-1;i++) {
         if (isdigit(caculator[i])==0 && caculator[i]!='+' && caculator[i]!='-' && caculator[i]!='*' && caculator[i]!='/' && caculator[i]!='(' && caculator[i]!=')' && caculator[i]!='!' && caculator[i]!='@') {
             return -1;
         }

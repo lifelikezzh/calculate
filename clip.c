@@ -4,12 +4,13 @@
 #include "clip.h"
 #include <math.h>
 #include <ctype.h>
-void clip(const char *caculator, int *digit, char *signal) {
+void clip(const char *caculator, double *digit, char *signal) {
     int cnt=0;
     int cnt1=0;
     int plusOne=0;
     int useThis=1;
-    for (int i=0;caculator[i-1]!='=';i++) {
+    int i=0;
+    for (i=0;caculator[i-1]!='=';i++) {
         if (isdigit(caculator[i])!=0) {
             cnt++;
             useThis=0;
